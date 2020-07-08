@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.* ?>
+<?import javafx.scene.layout.* ?>
+<?import javafx.scene.text.* ?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.cauc.server.Controller">
+    <Label layoutX="24.0" layoutY="53.0" text="消息记录">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <TextArea fx:id="messageWindow" editable="false" layoutX="24.0" layoutY="75.0" prefHeight="400.0" prefWidth="365.0" />
+    <Label layoutX="412.0" layoutY="53.0" text="在线用户">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <TableView fx:id="userInfoTable" layoutX="412.0" layoutY="75.0" prefHeight="400.0" prefWidth="365.0">
+        <columns>
+            <TableColumn fx:id="usernameCol" editable="false" prefWidth="75.0" sortable="false" text="用户名" />
+            <TableColumn fx:id="ipCol" editable="false" prefWidth="75.0" sortable="false" text="IP" />
+            <TableColumn fx:id="portCol" editable="false" prefWidth="75.0" sortable="false" text="端口" />
+            <TableColumn fx:id="loginTimeCol" editable="false" prefWidth="75.0" sortable="false" text="登录时间" />
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+    </TableView>
+</AnchorPane>

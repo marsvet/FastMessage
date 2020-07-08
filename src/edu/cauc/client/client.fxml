@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.* ?>
+<?import javafx.scene.layout.* ?>
+<?import javafx.scene.text.* ?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.cauc.client.Controller">
+    <Label layoutX="27.0" layoutY="30.0" text="用户名：">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <TextField fx:id="usernameTextField" layoutX="107.0" layoutY="26.0" prefHeight="25.0" prefWidth="170.0">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </TextField>
+    <Label layoutX="304.0" layoutY="32.0" text="密码：">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <PasswordField fx:id="passwordTextField" layoutX="363.0" layoutY="27.0" prefHeight="25.0" prefWidth="170.0">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </PasswordField>
+    <Button fx:id="loginButton" layoutX="590.0" layoutY="28.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="25.0" prefWidth="80.0" text="登录">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Button>
+    <Label layoutX="27.0" layoutY="96.0" text="消息记录">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <TextArea fx:id="messageWindow" editable="false" layoutX="27.0" layoutY="118.0" prefHeight="299.0" prefWidth="421.0">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </TextArea>
+    <Label layoutX="467.0" layoutY="96.0" text="在线用户">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <ListView fx:id="onlineUsersWindow" layoutX="467.0" layoutY="118.0" prefHeight="299.0" prefWidth="303.0" />
+    <TextField fx:id="messageInputField" layoutX="27.0" layoutY="441.0" prefHeight="25.0" prefWidth="421.0">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </TextField>
+    <Button fx:id="sendMessageButton" disable="true" layoutX="467.0" layoutY="441.0" mnemonicParsing="false" onAction="#sendChatMessage" prefHeight="33.0" prefWidth="140.0" text="发送消息">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Button>
+    <Button fx:id="sendFileButton" disable="true" layoutX="630.0" layoutY="441.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="140.0" text="发送文件">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Button>
+    <Button fx:id="registerButton" layoutX="690.0" layoutY="28.0" mnemonicParsing="false" onAction="#userRegister" prefHeight="25.0" prefWidth="80.0" text="注册">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Button>
+</AnchorPane>
